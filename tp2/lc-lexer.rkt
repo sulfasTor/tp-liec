@@ -20,7 +20,7 @@
 
 
 (define tokenize
-  (lexer
+  (lexer-src-pos
    ((eof) (token-Eof))
    (whitespace (tokenize input-port))
    ;   ("λ" (token-Lambda))

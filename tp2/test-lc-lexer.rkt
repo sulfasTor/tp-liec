@@ -7,6 +7,7 @@
   (let loop((t (tokenize in)))
     (unless (eq? t 'Eof)
       (write t)
+      (newline)
       (loop (tokenize in))))
   (newline))
 
